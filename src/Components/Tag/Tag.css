@@ -1,0 +1,52 @@
+.tag {
+    width: 100%;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.tag:hover .tag__edit {
+    display: block;
+}
+
+.tag__edit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: none;
+}
+
+.tag__edit button,
+.tag__edit label
+{
+    background-color: blueviolet;
+    border: none;
+    padding: 5px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-radius: 2px;
+    color: #fff;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+
+.tag input {
+    width: 100%;
+    padding: 7px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: text;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid #eee;
+}
+
+.tag input[readonly] {
+    background-color: #FFFFEE;
+}
